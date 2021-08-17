@@ -11,8 +11,9 @@ import { Check } from "@awkewainze/checkverify";
 
 function doThing(param1: number, param2: string): void {
     Check.verifyPositive(param1); // If `param1 <= 0` then throws generic error.
-    Check.verifyNotNullUndefinedOrEmpty(param2); // If param is `null`, `undefined`, or an empty string (after being trimmed) then throws generic error.
-    Check.verify()
+    Check.verifyNotNullUndefinedOrEmpty(param2); // If param is `null`, `undefined`, or an empty string then throws generic error.
+    Check.verify(param1 < 100);
+
     // Do things...
 }
 ```
@@ -41,6 +42,7 @@ import { Check } from "@awkewainze/checkverify";
 function doThing(param1: number, param2: string): void {
     Check.verifyPositive(param1, "param1 was not positive"); // Throws error with message provided.
     Check.verifyNotNullUndefinedOrEmpty(param2, new Error("param2 was null or empty"));
+    Check.verify(param1 < 100, "param1 must be less than 100");
 
     // Do things...
 }

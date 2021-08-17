@@ -1,11 +1,11 @@
 {
   "name": "@awkewainze/checkverify",
   "version": "1.0.1",
-  "description": "",
+  "description": "A simple precondition library similar to Guava's preconditions",
   "main": "dist/check.js",
   "types": "dist/check.d.ts",
   "scripts": {
-    "prepublish": "tsc",
+    "prepack": "npm run build && npm test",
     "build": "tsc",
     "test": "npx jest"
   },
