@@ -1,6 +1,6 @@
 {
   "name": "@awkewainze/checkverify",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple precondition library similar to Guava's preconditions",
   "main": "dist/check.js",
   "types": "dist/check.d.ts",
