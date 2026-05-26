@@ -1,6 +1,6 @@
 # CheckVerify
 
-A simple library for checking preconditions on functions. Heavily inspired by [Guava's Precondition](https://guava.dev/releases/19.0/api/docs/com/google/common/base/Preconditions.html).
+A simple library for checking preconditions on functions. Inspired by [Google Guava's Preconditions](https://guava.dev/releases/19.0/api/docs/com/google/common/base/Preconditions.html).
 
 Methods starting with `verify` throw on failure, while methods starting with `is` return `boolean`.
 
